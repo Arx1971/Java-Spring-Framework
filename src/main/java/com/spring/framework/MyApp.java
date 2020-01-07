@@ -1,4 +1,4 @@
-package org.springframework;
+package com.spring.framework;
 
 public class MyApp {
 
