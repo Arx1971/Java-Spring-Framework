@@ -9,8 +9,8 @@
 
     <!-- Define your beans here -->
     <bean id="myCoach"
-          class="com.spring.framework.TrackCoach">
-        
+          class="com.spring.framework.SoccerCoach">
+
     </bean>
 </beans>
 
