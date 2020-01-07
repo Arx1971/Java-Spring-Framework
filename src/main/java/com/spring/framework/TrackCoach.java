@@ -6,4 +6,9 @@ public class TrackCoach implements Coach {
     public String getDailyWorkout() {
         return "Run as hard 5k";
     }
+
+    @Override
+    public String getDailyFortune() {
+        return null;
+    }
 }

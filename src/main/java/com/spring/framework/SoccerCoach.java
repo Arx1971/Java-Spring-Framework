@@ -6,4 +6,9 @@ public class SoccerCoach implements Coach {
         return "They have working out for last few hours";
     }
 
+    @Override
+    public String getDailyFortune() {
+        return null;
+    }
+
 }
