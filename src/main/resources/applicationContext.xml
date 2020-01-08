@@ -7,6 +7,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <!-- Load the properties file: sport.properties -->
+    <context:property-placeholder location="classpath:sport.properties"/>
     <!-- Define your beans here -->
 
     <!-- Dependency-->
@@ -15,11 +17,15 @@
           class="com.spring.framework.HappyFortuneService">
     </bean>
 
-    <bean id="myCoach"
+    <bean id="randomFortune"
+          class="com.spring.framework.newFortuneClass">
+    </bean>
+
+    <bean id="myBaseBallCoach"
           class="com.spring.framework.BaseballCoach">
 
         <!-- Constructor Injection -->
-        <constructor-arg ref="myFortune"/>
+        <constructor-arg ref="randomFortune"/>
     </bean>
 
     <bean id="myCricketCoach"
@@ -27,6 +33,9 @@
 
         <!-- Setter Injection-->
         <property name="fortuneService" ref="myFortune"/>
+        <!-- Inject Property value -->
+        <property name="emailAddress" value="${foo.email}"/>
+        <property name="team" value="${foo.team}"/>
     </bean>
 
 </beans>
