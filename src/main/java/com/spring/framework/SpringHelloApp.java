@@ -13,6 +13,8 @@ public class SpringHelloApp {
 
         System.out.println(theCoach.getDailyWorkout());
 
+        System.out.println(theCoach.getDailyFortune());
+
         context.close();
 
     }
