@@ -17,7 +17,8 @@
 
 
     <bean id="myCoach"
-          class="com.spring.framework.TrackCoach">
+          class="com.spring.framework.TrackCoach"
+          scope="prototype">
 
         <!-- Constructor Injection -->
         <constructor-arg ref="myFortune"/>
