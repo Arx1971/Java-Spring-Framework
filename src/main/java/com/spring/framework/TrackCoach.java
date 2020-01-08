@@ -20,4 +20,17 @@ public class TrackCoach implements Coach {
     public String getDailyFortune() {
         return fortuneService.getFortune();
     }
+
+    // bean life cycle init method
+
+    public void initMethod() {
+        System.out.println("This is Init Method");
+    }
+
+    // bean life cycle destroy method
+
+    public void destroyMethod() {
+        System.out.println("This is Destroy Method");
+    }
+
 }
