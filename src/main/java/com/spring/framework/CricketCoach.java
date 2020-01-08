@@ -5,7 +5,7 @@ public class CricketCoach implements Coach {
     private FortuneService fortuneService;
 
     public CricketCoach() {
-        System.out.println("CriketCoach: inside no-arg constructor");
+        System.out.println("CricketCoach: inside no-arg constructor");
     }
 
     public FortuneService getFortuneService() {
@@ -13,7 +13,7 @@ public class CricketCoach implements Coach {
     }
 
     public void setFortuneService(FortuneService fortuneService) {
-        System.out.println("CriketCoach: Setter Method");
+        System.out.println("CricketCoach: Setter Method");
         this.fortuneService = fortuneService;
     }
 
